@@ -1,0 +1,16 @@
+body{
+    background-image: url(/03-CssSelectorsColorsBG/assets/images/images.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.hero{
+    border: 1px solid black;
+    color: black;
+    margin-top: 200px;
+    background-color: gray;
+    align-items: center;
+    font-style: italic;
+}
+.nav{
+    color: black;
+}

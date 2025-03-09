@@ -1,0 +1,9 @@
+body{
+
+}
+
+div{
+    border: 10px solid black;
+    background-image: url(/03-CssSelectorsColorsBG/assets/images/indir.jpeg);
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,11 @@
+body{
+    background-image: url(/03-CssSelectorsColorsBG/assets/images/indir.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+div{
+    font-size: x-large;
+    margin: 50px;
+    text-align: center;
+}

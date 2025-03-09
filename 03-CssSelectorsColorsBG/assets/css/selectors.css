@@ -1,0 +1,92 @@
+/* id="firstname" ilə elementi seçir */
+ #id{
+    background-color: black;
+}
+
+/* class="intro" ilə bütün elementləri seçir */
+.class{
+    font-size: x-large;
+}
+
+/* Bütün elementləri seçir */
+*{
+    text-align: center;
+}
+
+/* Bütün <p> elementləri seçir */
+element{
+    margin-left: 20px;
+}
+
+
+/* müəyyən elementin uşaqları olan bütün elementləri seçir. */
+div>p{
+    background-color: yellow;
+}
+
+/* birbaşa başqa bir xüsusi elementdən sonra olan elementi seçmək üçün istifadə olunur. */
+div + p {
+    background-color: yellow;
+  }
+
+  /* müəyyən bir elementin sonrakı qardaşları olan bütün elementləri seçir. */
+  div ~ p {
+    background-color: yellow;
+  }
+
+ /* ziyarət edilməmiş link */
+a:link {
+  color: red;
+}
+
+/* ziyarət edilmiş link */
+a:visited {
+  color: green;
+}
+
+/* linkin üzərində kursor */
+a:hover {
+  color: hotpink;
+}
+
+/* seçilmiş link */
+a:active {
+  color: blue;
+}
+
+/* seçici hər hansı elementin ilk uşaq olan istənilən <p> elementinə uyğun gəlir */
+p:first-child {
+  color: blue;
+} 
+
+/* sonuncu li elementini təyin edir */
+li:last-child {
+  color: yellowgreen;
+}
+
+/* hər 3-cü p elementini təyin edir */
+p:nth-of-type(3) {
+  background-color: burlywood;
+}
+
+/* hər 2-ci li elementini təyin edir */
+li:nth-child(2) {
+  font-size: 20px;
+}
+
+/* boş elementləri təyin edir */
+p:empty {
+  border: 1px solid gray;
+}
+
+/* hər p elementinin əvvəlinə məzmun təyin edir */
+p::before {
+  content: "a";
+  color: aliceblue;
+}
+
+/* p elementinin sonuna məzmun təyin edir */
+p::after {
+  content: "b";
+  color: black;
+}
