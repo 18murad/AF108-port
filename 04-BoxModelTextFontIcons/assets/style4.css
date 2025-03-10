@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.section{
+    display: flex;
+    margin: auto;
+    padding: 60px;
+}
+.header{
+    min-width: max-content;
+    color: blue;
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+    margin: auto;
+}
+.right{
+    height: max-content;
+    font-size: 20px;
+    margin-left: 200px;
+}
+.contact{
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 300px;
+}
+.righttw{
+    height: max-content;
+    font-size: 20px;
+    margin-left: 200px;
+    font-weight: bold;
+    font-style: italic;
+}

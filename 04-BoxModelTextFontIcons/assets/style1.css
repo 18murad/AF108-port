@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.header{
+    background-color: #ed8034;
+    text-align: center;
+    height: 350px;
+    font-size: xx-large;
+    padding: 120px;
+}
+.body{
+    background-color: #ffb123;
+    display: flex;
+    height: 100px;   
+}
+p{
+    width: 800px;
+}
+.section{
+    margin: auto;
+}
+.div{
+    display: flex;
+}
+.div>div{
+    border: 4px solid black;
+    padding: 20px;
+    width: 400px;
+    margin: 30px;
+    background-color: #2184cd;
+    height: 250px;
+    color: white;
+}

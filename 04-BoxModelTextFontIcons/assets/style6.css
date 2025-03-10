@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.head{
+    background-color: orange;
+    text-align: center;
+    margin: auto;
+    width: 700px;
+    height: 250px;
+    padding: 70px;
+    margin-top: 100px;
+}
+h1{
+    color: white;
+    margin-bottom: 15px;
+}
+.foot{
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    color: white;
+    background-color: rgb(6, 36, 48);
+    font-weight: bold;
+
+}
