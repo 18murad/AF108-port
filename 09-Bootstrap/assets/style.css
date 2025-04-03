@@ -1,0 +1,20 @@
+
+.nav_ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+} 
+.nav_ul a{
+    text-decoration: none;
+    color: white;
+    gap: 2rem;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
