@@ -1,0 +1,8 @@
+.app {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: linear-gradient(135deg, #fdfbfb, #ebedee);
+    border-radius: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
