@@ -1,0 +1,40 @@
+.page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f4ff, #ffffff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem;
+}
+
+.page-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #0d47a1;
+  margin-bottom: 2rem;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 500px;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.button:hover {
+  background-color: #1565c0 !important;
+  transition: 0.3s ease;
+}
+
+input,
+label {
+  margin-bottom: 1rem;
+}
+
+.Toastify__toast {
+  font-family: 'Arial', sans-serif;
+  font-size: 0.95rem;
+}
