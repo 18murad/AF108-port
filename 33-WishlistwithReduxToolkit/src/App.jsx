@@ -9,7 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import DeleteIcon from '@mui/icons-material/Delete';
 
-// CONTEXT
+
 const ProductContext = createContext();
 
 const ProductProvider = ({ children }) => {
@@ -25,18 +25,18 @@ const ProductProvider = ({ children }) => {
   const addToWishlist = (product) => {
     if (!wishlist.find(item => item.id === product.id)) {
       setWishlist([...wishlist, product]);
-      toast.success('Məhsul istək siyahısına əlavə olundu!');
+      toast.success('PRODUCT ADD WISHLIST');
     }
   };
 
   const removeFromWishlist = (productId) => {
     setWishlist(wishlist.filter(item => item.id !== productId));
-    toast.info('Məhsul istək siyahısından silindi!');
+    toast.info('PRODUCT DELETE WISHLIST');
   };
 
   const clearWishlist = () => {
     setWishlist([]);
-    toast.info('İstək siyahısı təmizləndi!');
+    toast.info('WISHLIST CLEANED');
   };
 
   return (
@@ -46,7 +46,7 @@ const ProductProvider = ({ children }) => {
   );
 };
 
-// NAVBAR
+
 const Navbar = ({ isAuth, handleLogout }) => {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
@@ -76,7 +76,7 @@ const Navbar = ({ isAuth, handleLogout }) => {
   );
 };
 
-// REGISTER PAGE
+
 const Register = () => {
   const navigate = useNavigate();
   return (
@@ -89,7 +89,7 @@ const Register = () => {
           password: Yup.string().min(6, 'Too short').required('Required'),
         })}
         onSubmit={(values) => {
-          toast.success('Qeydiyyat uğurla tamamlandı!');
+          toast.success('SUCCESS REGISTER');
           navigate('/login');
         }}
       >
@@ -107,7 +107,6 @@ const Register = () => {
   );
 };
 
-// LOGIN PAGE
 const Login = ({ setIsAuth }) => {
   const navigate = useNavigate();
   return (
@@ -121,7 +120,7 @@ const Login = ({ setIsAuth }) => {
         })}
         onSubmit={(values) => {
           setIsAuth(true);
-          toast.success('Giriş uğurlu oldu!');
+          toast.success('SUCCESS LOGIN');
           navigate('/products');
         }}
       >
@@ -139,7 +138,6 @@ const Login = ({ setIsAuth }) => {
   );
 };
 
-// PRODUCT PAGE
 const Products = () => {
   const { products, wishlist, addToWishlist, removeFromWishlist } = useContext(ProductContext);
 
@@ -185,7 +183,6 @@ const Products = () => {
   );
 };
 
-// WISHLIST PAGE
 const Wishlist = () => {
   const { wishlist, removeFromWishlist, clearWishlist } = useContext(ProductContext);
 
@@ -200,12 +197,12 @@ const Wishlist = () => {
           onClick={clearWishlist}
           sx={{ mb: 2 }}
         >
-          Bütün məhsulları sil
+          DELETE ALL PRODUCTS
         </Button>
       )}
 
       {wishlist.length === 0 ? (
-        <Typography variant="body1">İstək siyahısı boşdur.</Typography>
+        <Typography variant="body1">WISHLIST EMPTY</Typography>
       ) : (
         <Grid container spacing={2}>
           {wishlist.map(product => (
@@ -233,12 +230,11 @@ const Wishlist = () => {
   );
 };
 
-// APP COMPONENT
 export default function App() {
   const [isAuth, setIsAuth] = useState(false);
   const handleLogout = () => {
     setIsAuth(false);
-    toast.info('Çıxış edildi');
+    toast.info('EXIST');
   };
 
   return (
@@ -247,7 +243,7 @@ export default function App() {
         <Navbar isAuth={isAuth} handleLogout={handleLogout} />
         <ToastContainer />
         <Routes>
-          <Route path="/" element={<Typography variant="h4" sx={{ m: 3 }}>Ana Səhifə</Typography>} />
+          <Route path="/" element={<Typography variant="h4" sx={{ m: 3 }}>HOME</Typography>} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login setIsAuth={setIsAuth} />} />
           <Route path="/products" element={<Products />} />
@@ -255,5 +251,5 @@ export default function App() {
         </Routes>
       </ProductProvider>
     </Router>
-  );
+ );
 }
