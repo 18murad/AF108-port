@@ -1,0 +1,39 @@
+.features{
+    display: flex;
+    justify-content: space-around ;
+    gap: 10px;
+    padding: 20px;
+}
+
+.featureItem{
+    text-align: left;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.featureItem:hover{
+transform: translateY(-5px);
+}
+
+
+
+h3{
+    font-size: 32px;
+}
+
+p{
+    font-size: 20px;
+}
+
+.link{
+    color: #007bff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+
